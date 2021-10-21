@@ -1,4 +1,3 @@
-const { response } = require("express");
 const express = require("express");
 const path = require("path");
 
@@ -7,7 +6,6 @@ const app = express();
 
 //register view engine
 app.set("view engine", "ejs");
- 
 
 // listen to requests
 app.listen(3000);

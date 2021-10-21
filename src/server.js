@@ -1,4 +1,4 @@
-const http = require("http");
+const http = require("http");//core node module
 const fs = require("fs");
 const _ = require("lodash");
 
@@ -45,7 +45,7 @@ const server = http.createServer((req, res) => {
       res.setHeader("Location", "/about");
       res.statusCode = 301; //resource is perfmanantly moved to another location  // Not required to set this if we use express
       break;
-    default:
+    default: 
       path += "404.html";
       res.statusCode = 404;
       break;

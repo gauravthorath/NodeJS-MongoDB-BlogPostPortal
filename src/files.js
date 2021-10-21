@@ -5,7 +5,7 @@ const fs = require("fs"); //Core module
 //   if (err) {
 //     console.log(err);
 //   }
-//   console.log(data.toString()); // simple data will return buffer data not readable(byte format) actual data so used tostring method
+//   console.log(data.toString()); // only data will return buffer data not readable(byte format) actual data so used tostring method
 // });
 
 //? Writting files
