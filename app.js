@@ -1,8 +1,18 @@
 const express = require("express");
 const morgan = require("morgan");
+const mongoose = require("mongoose"); // TO connect with Mongoose
 
 // express app
 const app = express();
+
+const dbURI =
+  "mongodb+srv://firstUser:CUcg2vomOqwm9vUE@cluster0.fql8m.mongodb.net/BloggerDB?retryWrites=true&w=majority";
+//Connect to MongoDB using URI
+
+mongoose
+  .connect(dbURI, { useNewUrlParser: true })
+  .then((res) => console.log("Connected To DB"))
+  .catch((err) => console.error(err));
 
 // listen for requests
 app.listen(3000);
